@@ -1,2 +1,15 @@
-<h1>Products#new</h1>
-<p>Find me in app/views/products/new.html.erb</p>
+<h1>QUE SOUHAITEZ VOUS JETER?</h1>
+
+<div class="card-center" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <%= simple_form_for(@product) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :address %>
+    <%= f.input :state %>
+    <%= f.input :photo, as: :file %>
+    <%= f.submit %>
+
+  </ul>
+</div>
+<% end %>
