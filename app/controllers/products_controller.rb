@@ -10,4 +10,8 @@ class ProductsController < ApplicationController
   def new
     @product = Product.new
   end
+
+  def product_params
+    params.require(:product).permit(:name, :description, :address, :state, :photo)
+  end
 end
