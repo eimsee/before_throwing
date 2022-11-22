@@ -1,0 +1,17 @@
+<h1>TOUS LES PRODUITS</h1>
+<%# <p>Find me in app/views/products/index.html.erb</p> %>
+<div class="container">
+  <div class="row">
+    <% @products.each do |product| %>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><%= product.name %></h5
+            <p class="card-text"><%= product.state %></p>
+            <a href="#" class="btn btn-primary">voir les détails</a>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
