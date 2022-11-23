@@ -23,16 +23,16 @@ users.each do |user|
 end
 puts "Creating products..."
 products = [
-  { name: "chaise", description: "moisissure et peinture délavé", address: "Avenue Jean Marie Serrault, Fort de France", state: 'mauvais', user: User.all.sample },
-  { name: "table", description: "moisissure", address: "Route de l'Enclos,Schoelcher", state: 'mauvais', user: User.all.sample },
-  { name: "lit", description: "manque les bateaux", address: "Rue Victor Severe, Case Pilote", state: 'moyen', user: User.all.sample },
-  { name: "console", description: "très abimé", address: "Rue Camille Sylvestre, Le Lamentin", state: 'mauvais', user: User.all.sample },
-  { name: "chaise", description: "capitonnage et dossier à retaper", address: "Avenue Felix Eboué, Ducos", state: 'moyen', user: User.all.sample },
-  { name: "chaise", description: "capitonnage a refaire", address: "Rue des Grottes,Trois Ilets", state: 'mauvais', user: User.all.sample },
-  { name: "table_basse", description: "teinture et vernis abimé", address: "Rue Lamartine, Sainte Luce", state: 'bon', user: User.all.sample },
-  { name: "table de chevet", description: "brulé", address: "Rue Damas, Saint Pierre", state: 'moyen', user: User.all.sample },
-  { name: "commode", description: "en piece détaché", address: "Rue Victor Hugo, Saint Joseph", state: 'mauvais', user: User.all.sample },
-  { name: "fauteuil", description: "coussin a refaire, structure assise cassée", address: "Rue Blenac, Fort de France", state: 'mauvais', user: User.all.sample }
+  { name: "chaise", description: "moisissure et peinture délavé", address: "Avenue Jean Marie Serrault, Fort de France, Martinique", state: 'mauvais', user: User.all.sample },
+  { name: "table", description: "moisissure", address: "Route de l'Enclos,Schoelcher, Martinique ", state: 'mauvais', user: User.all.sample },
+  { name: "lit", description: "manque les bateaux", address: "Rue Victor Severe, Case Pilote, Martinique", state: 'moyen', user: User.all.sample },
+  { name: "console", description: "très abimé", address: "Rue Camille Sylvestre, Le Lamentin, Martinique", state: 'mauvais', user: User.all.sample },
+  { name: "chaise", description: "capitonnage et dossier à retaper", address: "Avenue Felix Eboué, Ducos, Martinique", state: 'moyen', user: User.all.sample },
+  { name: "chaise", description: "capitonnage a refaire", address: "Rue des Grottes,Trois Ilets, Martinique", state: 'mauvais', user: User.all.sample },
+  { name: "table_basse", description: "teinture et vernis abimé", address: "Rue Lamartine, Sainte Luce, Martinique", state: 'bon', user: User.all.sample },
+  { name: "table de chevet", description: "brulé", address: "Rue Damas, Saint Pierre, Martinique", state: 'moyen', user: User.all.sample },
+  { name: "commode", description: "en piece détaché", address: "Rue Victor Hugo, Saint Joseph, Martinique", state: 'mauvais', user: User.all.sample },
+  { name: "fauteuil", description: "coussin a refaire, structure assise cassée", address: "Rue Blenac, Fort de France, Martinique", state: 'mauvais', user: User.all.sample }
 ]
 
 photos = [
