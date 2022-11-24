@@ -6,4 +6,10 @@ class User < ApplicationRecord
   has_many :products
   has_many :bookings
   has_many :booked_products, through: :bookings, source: :product
+
+  def full_name
+    return email unless first_name && last_name
+
+    "#{first_name.capitalize} #{last_name.capitalize}"
+  end
 end

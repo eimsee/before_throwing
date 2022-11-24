@@ -1,11 +1,11 @@
 <%# <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p> %>
-<div class="banner mb-3" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @product.photo.key, height: 300, crop: :fill if @product.photo.attached? %>');">
+<div class="banner mb-3" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://cdn.shopify.com/s/files/1/2531/1666/files/Capture_d_ecran_2022-02-25_a_12.14.10_480x480.png?v=1645787659');">
   <div class="container">
     <h1><strong>BEFORE THROWING</strong></h1>
     <p>Faites le savoir!</p>
-    <%= link_to 'Ajouter un objet', new_product_path, class: 'btn btn-primary' %>
-    <%= link_to 'Voir tous les objets', products_path, class: 'btn btn-primary' %>
+    <%= link_to 'Ajouter un objet', new_product_path, class: 'btn btn-warning' %>
+    <%= link_to 'Voir tous les objets', products_path, class: 'btn btn-warning' %>
   </div>
 </div>
 
@@ -18,10 +18,10 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <%= image_tag 'decharge5.jpg', height: 350, class: 'd-block w-100' %>
+        <%= image_tag 'images bouchon.jpg', height: 350, class: 'd-block w-100' %>
       </div>
       <div class="carousel-item">
-        <%= image_tag 'decharge2.jpg', height: 350, class: 'd-block w-100' %>
+        <%= image_tag 'chaise_revalorisee.jpg', height: 350, class: 'd-block w-100' %>
       </div>
       <div class="carousel-item">
         <%= image_tag 'decharge3.jpg', height: 350, class: 'd-block w-100' %>
@@ -38,6 +38,8 @@
   </div>
 </div>
 
-<div>
-  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+<div class="container">
+  <div class="card-center mt-3 mb-3" style="width: 18rem;">
+    <p>L'upcycling est bien plus qu'une tendance car il soutient également une économie circulaire. L'économie circulaire est un système dans lequel les biens sont utilisés et réutilisés plusieurs fois au lieu d'être jetés après une seule utilisation.</p>
+  </div>
 </div>
