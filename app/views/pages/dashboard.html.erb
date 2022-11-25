@@ -1,1 +1,35 @@
-coucou <%= current_user.email %>
+<%# coucou <%= current_user.email %>
+<div class="container mx-auto">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <h2>MES OBJETS</h2>
+      <div class="cards">
+        <% @my_products.each do |product| %>
+          <div class="card mt-5 mb-5" style="width: 18rem;">
+            <%= cl_image_tag product.photo.key, class: "card-img-top" %>
+            <div class="card-body">
+              <h5 class="card-title d-none"><strong>Propriétaire: </strong><%= product.user.full_name %></h5>
+              <p class="card-text"><strong>NAME: </strong><%= product.name %></p>
+              <%= link_to 'Voir les détails', product_path(product), class: 'btn btn-warning' %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <h2>MES RÉSERVATIONS</h2>
+      <div class="cards">
+        <% @my_booked_products.each do |product| %>
+          <div class="card mt-5 mb-5" style="width: 18rem;">
+            <%= cl_image_tag product.photo.key, class: "card-img-top" %>
+            <div class="card-body">
+              <h5 class="card-title d-none"><strong>Propriétaire: </strong><%= product.user.full_name %></h5>
+              <p class="card-text"><strong>NAME: </strong><%= product.name %></p>
+              <%= link_to 'Voir les détails', product_path(product), class: 'btn btn-warning' %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
