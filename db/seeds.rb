@@ -10,6 +10,7 @@ Product.destroy_all
 User.destroy_all
 
 users = [
+  { first_name: 'Marie-christine', last_name: 'Morvany', email: 'eimsee_eesmie@live.fr', password: '123456' },
   { first_name: 'Jean', last_name: 'Valjean', email: 'jean@test.com', password: '123456' },
   { first_name: 'Javert', last_name: 'Christian', email: 'javert@live.fr', password: '123456' },
   { first_name: 'Cosette', last_name: 'Albert', email: 'cosette@live.fr', password: '123456' },
