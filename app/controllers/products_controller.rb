@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show]
+
   def index
     if params[:query].present?
       @products = Product.all_available.where("name ILIKE ?", "%#{params[:query]}%")
