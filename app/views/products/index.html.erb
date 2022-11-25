@@ -1,11 +1,7 @@
-<div class="text-center mt-5">
-<h1>TOUS LES PRODUITS</h1>
-</div>
-<%# <p>Find me in app/views/products/index.html.erb</p> %>
-
-<div class="container">
-  <%= simple_form_for :search, url: products_path, method: :get do |f| %>
-    <div class="search-form-control form-group mt-5 mb-5">
+<div class="container my-3">
+  <h1 class="text-center mb-4">TOUS LES PRODUITS</h1>
+  <%= simple_form_for :search, url: products_path, method: :get, html: {class: 'mb-2' } do |f| %>
+    <div class="search-form-control form-group">
       <%= text_field_tag :query,
         params[:query],
         class: "form-control",
@@ -16,15 +12,14 @@
   <% end %>
   <div class="cards">
     <% @products.each do |product| %>
-
-          <div class="card mt-5 mb-5" style="width: 18rem;">
-            <%= cl_image_tag product.photo.key, class: "card-img-top" %>
-            <div class="card-body">
-              <h5 class="card-title"><strong>NAME: </strong><%= product.name %></h5>
-              <p class="card-text"><strong>STATE: </strong><%= product.state %></p>
-              <%= link_to 'Voir les détails', product_path(product), class: 'btn btn-warning' %>
-            </div>
-          </div>
+      <div class="card card-index-product">
+        <%= cl_image_tag product.photo.key, class: "card-img-top squared object-cover" if product.photo.attached? %>
+        <div class="card-body">
+          <h5 class="card-title"><strong>NAME: </strong><%= product.name %></h5>
+          <p class="card-text"><strong>STATE: </strong><%= product.state %></p>
+          <%= link_to 'Voir les détails', product_path(product), class: 'btn btn-warning' %>
+        </div>
+      </div>
     <% end %>
   </div>
   <div class="rounded w-100" style="width: 100%; height: 600px;"
