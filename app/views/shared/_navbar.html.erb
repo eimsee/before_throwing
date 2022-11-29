@@ -12,16 +12,16 @@
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item">
-            <%= link_to "Home", root_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Messages", "#", class: "nav-link" %>
+            <%= link_to "Accueil", root_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
             <%= link_to "Tous les objets", products_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Historique", dashboard_path, class: "nav-link" %>
+            <%= link_to "Ajouter un objet", new_product_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Mes réservations", dashboard_path, class: "nav-link" %>
           </li>
 
           <li class="nav-item dropdown">

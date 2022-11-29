@@ -1,0 +1,25 @@
+.btn-principal {
+  color: white !important;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #66a803 !important;
+  transition: background 0.3s ease;
+}
+
+.btn-principal:hover {
+  background: #b4df88 !important;
+  color: white;
+}
+
+.btn-secondaire {
+  color: white !important;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: orange !important;
+  transition: background 0.3s ease;
+}
+
+.btn-secondaire:hover {
+  background: yellow !important;
+  color: white;
+}
