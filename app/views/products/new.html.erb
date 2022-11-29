@@ -1,15 +1,15 @@
 <div class="container">
-  <div class="text-center">
+  <div class="text-center mt-4 mb-4">
     <h1>QUE SOUHAITEZ VOUS JETER?</h1>
   </div>
 <div class="row justify-content-around">
   <div class="card-center" style="width: 18rem;">
     <ul class="list-group list-group-flush">
       <%= simple_form_for(@product) do |f| %>
-      <%= f.input :name %>
-      <%= f.input :description %>
-      <%= f.input :address %>
-      <%= f.input :state %>
+      <%= f.input :name, label: "NOM" %>
+      <%= f.input :description, label: "DESCRIPTION" %>
+      <%= f.input :address, label: "ADRESSE" %>
+      <%= f.input :state, label: "ÉTAT" %>
       <%= f.input :photo, as: :file %>
       <%= f.submit %>
 
