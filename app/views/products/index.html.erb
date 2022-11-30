@@ -1,5 +1,5 @@
 <div class="container my-3">
-  <h1 class="text-center mb-4"><strong>TOUS LES PRODUITS</strong></h1>
+  <h1 class="text-center mb-4">TOUS LES OBJETS</h1>
   <%= simple_form_for :search, url: products_path, method: :get, html: {class: 'mb-2' } do |f| %>
     <div class="search-form-control form-group">
       <%= text_field_tag :query,
@@ -10,13 +10,13 @@
       <%= submit_tag "Search", class: "btn btn-principal" %>
     </div>
   <% end %>
-  <div class="cards">
+  <div class="cards shadow-lg p-3 mb-5 bg-body rounded">
     <% @products.each do |product| %>
       <div class="card card-index-product">
         <%= cl_image_tag product.photo.key, class: "card-img-top squared object-cover" if product.photo.attached? %>
         <div class="card-body">
-          <h5 class="card-title"><strong>NOM: </strong><%= product.name.capitalize! %></h5>
-          <p class="card-text"><strong>ÉTAT: </strong><%= product.state %></p>
+          <h5 class="card-title">NOM: <%= product.name.capitalize! %></h5>
+          <p class="card-text">ÉTAT: <%= product.state %></p>
           <%= link_to 'Voir les détails', product_path(product), class: 'btn btn-secondaire' %>
         </div>
       </div>

@@ -13,8 +13,7 @@
             <p><%= product.bookings.first.date %></p>
             <% end %>
             <%# <p><%= product.bookings.geocoded.map %>
-
-            <%# products.geocoded.map %>
+               <%# products.geocoded.map %>
           </div>
         </div>
       <% end %>
@@ -32,6 +31,7 @@
             </div>
           </div>
         <% end %>
+        <%= link_to 'Ajouter un objet', new_product_path, class: 'btn btn-principal' %>
       </div>
     </div>
   </div>
