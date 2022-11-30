@@ -33,7 +33,13 @@ products = [
   { name: "TABLE BASSE", description: "teinture et vernis abimé", address: "Rue Lamartine, Sainte Luce, Martinique", state: 'bon', user: User.all.sample },
   { name: "TABLE DE CHEVET", description: "brulé", address: "Rue Damas, Saint Pierre, Martinique", state: 'moyen', user: User.all.sample },
   { name: "COMMODE", description: "en piece détaché", address: "Rue Victor Hugo, Saint Joseph, Martinique", state: 'mauvais', user: User.all.sample },
-  { name: "FAUTEUIL", description: "coussin a refaire, structure assise cassée", address: "Rue Blenac, Fort de France, Martinique", state: 'mauvais', user: User.all.sample }
+  { name: "FAUTEUIL", description: "coussin a refaire, structure assise cassée", address: "Rue Blenac, Fort de France, Martinique", state: 'mauvais', user: User.all.sample },
+  { name: "CHAISE", description: "capitonnage à refaire plus fond", address: "40 Rue des Poinsettias, Ducos, Martinique", state: 'moyen', user: User.all.sample },
+  { name: "COMMODE", description: "peinture abimée", address: "10 Rue Jules Monnerot, Fort de France, Martinique", state: 'mauvais', user: User.all.sample },
+  { name: "ÉTAGERE", description: "tiroir à refaire plus vernis", address: "14 Rue Bernard Boromé, Schoelcher, Martinique", state: 'moyen', user: User.all.sample },
+  { name: "FAUTEUIL", description: "capitonnage à refaire", address: "18 Rue de Gros Raisin, Saint-Luce, Martinique", state: 'mauvais', user: User.all.sample },
+  { name: "MEUBLE TÉLÉ", description: "vernis abimé, fond à refaire", address: "38 Rue André Guédon, Le Lamentin, Martinique", state: 'moyen', user: User.all.sample },
+  { name: "PORTE VITRÉE", description: "vitre en bon état, structure rouillée, peinture à refaire ", address: "16 Rue Perrinon, Carbet, Martinique", state: 'moyen', user: User.all.sample }
 ]
 
 photos = [
@@ -47,6 +53,12 @@ photos = [
   'public/seeds/chevet brule.jpg',
   'public/seeds/commode.jpg',
   'public/seeds/fauteuil.jpg',
+  'public/seeds/chaise blanche.jpg',
+  'public/seeds/commode4.jpg',
+  'public/seeds/etagere.jpg',
+  'public/seeds/fauteuils.jpg',
+  'public/seeds/meubletélé.jpg',
+  'public/seeds/vitre.jpg',
 
 ]
 
