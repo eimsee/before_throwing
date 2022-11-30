@@ -1,7 +1,7 @@
 <%# coucou <%= current_user.email %>
 <div class="container mx-auto">
   <div class="row">
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-6 mt-4">
       <h2>MES RÉSERVATIONS</h2>
       <% @my_booked_products.each do |product| %>
         <div class="card-product mb-2">
@@ -18,7 +18,7 @@
         </div>
       <% end %>
     </div>
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-6 mt-4">
       <h2>MES OBJETS</h2>
       <div class="">
         <% @my_products.each do |product| %>

@@ -1,7 +1,8 @@
 <div class="banner mb-3" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://www.maisonapart.com/images/auto/640-480-c/20090924_142207_1max-room-cush.jpg');">
   <div class="container">
     <h1><strong>BEFORE THROWING</strong></h1>
-    <p>Avant de jeter, faites le savoir!</p>
+    <h4>Avant de jeter, faites le savoir!</h4>
+    <p class="typed" data-controller="typed"></p>
     <%= link_to 'Voir tous les objets', products_path, class: 'btn btn-secondaire' %>
     <%= link_to 'Ajouter un objet', new_product_path, class: 'btn btn-principal' %>
   </div>
@@ -50,7 +51,7 @@
   </div>
   <div class="container d-flex justify-content-center text-center mt-5">
   <div>
-    <h3><strong>DERNIERS OBJETS AJOUTÉS PAR NOS UTILISATEURS:</strong><% @products.last %></h3>
+    <h3>DERNIERS OBJETS AJOUTÉS PAR NOS UTILISATEURS: <% @products.last %></h3>
   </div>
   </div>
   <div class="d-flex flex-justify-content-center text-center">
@@ -62,8 +63,8 @@
           <div class="card card-index-product">
             <%= cl_image_tag product.photo.key, class: "card-img-top squared object-cover" %>
             <div class="card-body">
-              <h5 class="card-title"><strong>NOM: </strong><%= product.name %></h5>
-              <p class="card-text"><strong>ÉTAT: </strong><%= product.state %></p>
+              <h5 class="card-title">NOM: <%= product.name %></h5>
+              <p class="card-text">ÉTAT: <%= product.state %></p>
               <%= link_to 'Voir les détails', product_path(product), class: 'btn btn-warning' %>
             </div>
           </div>
@@ -81,7 +82,7 @@
 <div class="banner mt-3 mb-3" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://cdn-s-www.ledauphine.com/images/F5A321CF-FF00-4716-8A3A-C2BA617290DE/NW_raw/la-laine-de-verre-et-les-dechets-verts-laisses-a-meme-le-sol-sur-le-terrain-on-peut-aussi-y-trouver-de-la-toiture-en-amiante-des-meubles-des-planches-et-meme-des-piscines-hors-sol-photos-le-dl-s-pe-1598814474.jpg');">
   <div class="container">
   <div class="text-white">
-    <h2><strong>ÉVITONS CELA</strong></h2>
+    <h2>ÉVITONS CELA</h2>
   </div>
   </div>
 </div>
