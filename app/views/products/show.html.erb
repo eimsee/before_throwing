@@ -1,5 +1,5 @@
 <div class="container mx-auto mt-3 mb-5">
-  <h1 class="text-center mb-4"><strong>DÉTAIL OBJET</strong></h1>
+  <h1 class="text-center mb-4">DÉTAIL OBJET</h1>
   <h2 class="card-title text-center"><%= @product.name %></h2>
   <div class="row mt-5">
     <div class="col-12 col-md-4">
@@ -9,15 +9,15 @@
     </div>
     <div class="col-12 col-md-4">
       <ul class="list-group list-group-flush">
-        <li class="list-group-item"><strong>DESCRIPTION: </strong><%= @product.description %></li>
-        <li class="list-group-item"><strong>ADRESSE: </strong><%= @product.address %></li>
-        <li class="list-group-item"><strong>ÉTAT: </strong><%= @product.state %></li>
+        <li class="list-group-item">DESCRIPTION: <%= @product.description %></li>
+        <li class="list-group-item">ADRESSE: <%= @product.address %></li>
+        <li class="list-group-item">ÉTAT: <%= @product.state %></li>
       </ul>
       <% if @product.booked? %>
         <hr>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item"><strong>DATE DE RÉSERVATION: </strong><%= @product.booking.date.strftime("%A %d %B %Y") %></li>
-          <li class="list-group-item"><strong>MESSAGE: </strong><%= @product.booking.message %></li>
+          <li class="list-group-item">DATE DE RÉSERVATION: <%= @product.booking.date.strftime("%d/%m/%Y") %></li>
+          <li class="list-group-item">MESSAGE: <%= @product.booking.message %></li>
         </ul>
         <% end %>
       <div class="">
@@ -25,9 +25,11 @@
           <%= simple_form_for([@product, @booking]) do |f| %>
             <%= f.input :date, html5: true %>
             <%= f.input :message %>
-            <%= f.submit %>
+            <%= f.submit "Réserver", class:"btn btn-principal" %>
+            <%= link_to 'Voir mes réservations', dashboard_path, class: 'btn btn-secondaire' %>
           <% end %>
         <% end %>
+
       </div>
 
     </div>
