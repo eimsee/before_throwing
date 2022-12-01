@@ -1,4 +1,4 @@
-<div class="banner mb-3" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://www.maisonapart.com/images/auto/640-480-c/20090924_142207_1max-room-cush.jpg');">
+<div class="banner mb-3" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://www.locandroll.com/wp-content/uploads/2020/06/6.jpg');">
   <div class="container">
     <h1><strong>BEFORE THROWING</strong></h1>
     <h4>Avant de jeter, faites le savoir!</h4>
@@ -42,8 +42,8 @@
   <div>
     <p>L'upcycling est bien plus qu'une tendance car il soutient également une économie circulaire. L'économie circulaire est un système dans lequel les biens sont utilisés et réutilisés plusieurs fois au lieu d'être jetés après une seule utilisation.</p>
     <div class="d-flex justify-content-center">
-      <video controls class="home-video">
-        <source src="https://res.cloudinary.com/dbu9ebniv/video/upload/v1669648887/Accros_des_d%C3%A9chets_une_nouvelle_pathologie_encore_tabou_en_Martinique_s1gdxm.mp4" type="video/mp4">
+      <video controls class="home-video" autoplay="true" muted="true" loop="loop">
+        <source src="https://res.cloudinary.com/dbu9ebniv/video/upload/v1669648887/Accros_des_d%C3%A9chets_une_nouvelle_pathologie_encore_tabou_en_Martinique_s1gdxm.mp4" autoplay="autoplay" loop="loop" type="video/mp4">
         <p>Votre navigateur ne prend pas en charge les vidéos HTML5.</p>
       </video>
     </div>
@@ -63,7 +63,7 @@
           <div class="card card-index-product">
             <%= cl_image_tag product.photo.key, class: "card-img-top squared object-cover" %>
             <div class="card-body">
-              <h5 class="card-title">NOM: <%= product.name %></h5>
+              <h5 class="card-title"><%= product.name %></h5>
               <p class="card-text">ÉTAT: <%= product.state %></p>
               <%= link_to 'Voir les détails', product_path(product), class: 'btn btn-warning' %>
             </div>
@@ -83,6 +83,8 @@
   <div class="container">
   <div class="text-white">
     <h2>ÉVITONS CELA</h2>
+      <%= link_to 'Voir tous les objets', products_path, class: 'btn btn-secondaire' %>
+      <%= link_to 'Ajouter un objet', new_product_path, class: 'btn btn-principal' %>
   </div>
   </div>
 </div>

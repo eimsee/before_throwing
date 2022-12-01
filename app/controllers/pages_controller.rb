@@ -19,7 +19,7 @@ class PagesController < ApplicationController
   end
 
   def dashboard
-    @my_products = current_user.products # products que j'ai mis a disposition sur le site
-    @my_booked_products = current_user.booked_products # products que j'ai reservé
+    @my_products = current_user.products.reverse # products que j'ai mis a disposition sur le site
+    @my_booked_products = current_user.booked_products.reverse # products que j'ai reservé
   end
 end
