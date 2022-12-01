@@ -15,7 +15,7 @@
       <div class="card card-index-product">
         <%= cl_image_tag product.photo.key, class: "card-img-top squared object-cover" if product.photo.attached? %>
         <div class="card-body">
-          <h5 class="card-title">NOM: <%= product.name.capitalize! %></h5>
+          <h5 class="card-title"><%= product.name.capitalize! %></h5>
           <p class="card-text">ÉTAT: <%= product.state %></p>
           <%= link_to 'Voir les détails', product_path(product), class: 'btn btn-secondaire' %>
         </div>
